@@ -1,0 +1,205 @@
+
+.head{
+    padding:50px;
+background-image: url("images/cloud.jpg");
+background-size: cover;
+background-position: center;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+.head h1{
+    font-size: 5vmax;
+color:blue
+
+
+}
+h1.hello{
+    position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  
+  animation-fill-mode: both;
+}
+@keyframes example {
+    from {top: -100px; }
+    to {top: 30px; }
+
+  }
+  /* weather */
+  .current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:2vmax
+}
+.date-container{
+    font-weight: 100;
+}
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+.place-container{
+  text-align: end;
+}
+
+.place-container .time-zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.place-container .country{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.current-info .others{
+  display: flex;
+  flex-direction: column;
+  background: rgba(24,24,27, 0.6);
+  padding:20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+}
+
+.current-info .others .weather-item{
+  display: flex;
+  justify-content: space-between;
+}
+.future-forecast {
+  padding:25px;
+  width: 100%;
+  display:flex;
+  background: rgba(24,24,27, 0.6);
+  color:white;
+  align-items: center;
+  justify-content: center;
+}
+.future-forecast .today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding:15px;
+  padding-right: 40px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2)
+}
+.future-forecast .today .day{
+  padding:5px 15px;
+  background:#3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+.future-forecast .today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.future-forecast .today .temp{
+  font-size: 20px;
+  padding-top: 15px;
+
+
+}
+.future-forecast .weather-forecast{
+  display: flex;
+
+}
+.future-forecast .weather-forecast-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 10px;
+  border: 1px solid #eee;
+border-radius: 10px;
+padding :15px;
+}
+.future-forecast .weather-forecast-item .day{
+  padding:5px 15px;
+  background:#3c3c44;
+  border-radius: 50px;
+  text-align: center;
+  
+
+}
+.others{
+  color:white;
+  border:1px solid #eee;
+}
+@media only screen and  (max-width:730px){
+  .future-forecast{
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+  }
+}
+ /* tourism */
+  .content{
+  
+  padding: 40px; 
+
+  }
+  .container{
+    padding: 20px 70px;
+    color:#fff;
+  }
+  /* .content-left{
+    margin-left: 40px;} */
+  .content-right h1{
+font-size: 4vmax;
+font-family: 'Gemunu Libre', sans-serif;
+padding: 100px;
+text-align: center;
+color:white
+  }
+  .content-right{
+background-image: url("images/map.jpeg") ;
+height: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width:100%;
+
+  }
+  .col-4{
+    flex-basis:40%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+  
+  .informative{
+    padding-top: 100px;
+
+}
+.informative .col-4{
+    text-align: center;
+    padding: 4vmax 4vmax;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+    transition: 0.5s;
+}
+.informative .col-4 img{
+    width: 70%;
+    height:auto;
+    margin-top: 4vm;
+    border-radius: 50%;
+}
+.informative .col-4:hover{
+    transform: translateY(-10px);
+}
+.sights{
+  text-align: center;
+  padding:30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;                                 
+}
